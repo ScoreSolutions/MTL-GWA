@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions targetNamespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+            
+             xmlns:tns="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup"
+>
+<documentation>
+WSDL Builder (Magic eDeveloper v9.4)
+Created by   : ---
+Created Date : 28/07/2011 Time :20:21:35
+</documentation>
+
+ 
+
+ 
+<message name="GetBenefitMember">
+   
+   <part name="p_CardInput" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+</message>
+<message name="GetBenefitMemberResponse">
+   
+   <part name="p_out_isFound_ac" type="xsd:string" />
+   <part name="p_out_benefit_sts" type="xsd:string" />
+   <part name="p_out_grp_code" type="xsd:string" />
+   <part name="p_out_ac_code" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_cust_no1" type="xsd:string" />
+   <part name="p_out_cust_no2" type="xsd:string" />
+   <part name="p_out_cust_name" type="xsd:string" />
+   <part name="p_out_cust_dob" type="xsd:string" />
+   <part name="p_out_cust_age" type="xsd:string" />
+   <part name="p_out_card_type" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_plan_e_date" type="xsd:string" />
+   <part name="p_out_cust_notepad" type="xsd:string" />
+   <part name="p_out_plan_notepad" type="xsd:string" />
+   <part name="p_out_ben_tab_code" type="xsd:string" />
+   <part name="p_out_ben_tab_s_date" type="xsd:string" />
+   <part name="p_out_end_no" type="xsd:string" />
+   <part name="p_out_pol_year" type="xsd:string" />
+</message>
+<message name="GetBenefitIPDList">
+   
+   <part name="p_CardInput" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+   <part name="p_grp_code" type="xsd:string" />
+   <part name="p_ac_code" type="xsd:string" />
+   <part name="p_ben_tab_code" type="xsd:string" />
+   <part name="p_ben_tab_s_date" type="xsd:string" />
+   <part name="p_end_no" type="xsd:string" />
+</message>
+<message name="GetBenefitIPDListResponse">
+   
+   <part name="p_out_benefit_ipd" type="xsd:string" />
+   <part name="p_out_isFound_ipd" type="xsd:string" />
+</message>
+<message name="GetBenefitOPDList">
+   
+   <part name="p_CardInput" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+   <part name="p_grp_code" type="xsd:string" />
+   <part name="p_ac_code" type="xsd:string" />
+   <part name="p_ben_tab_code" type="xsd:string" />
+   <part name="p_ben_tab_s_date" type="xsd:string" />
+   <part name="p_end_no" type="xsd:string" />
+</message>
+<message name="GetBenefitOPDListResponse">
+   
+   <part name="p_out_benefit_opd" type="xsd:string" />
+   <part name="p_out_isFound_opd" type="xsd:string" />
+</message>
+<message name="UpdateRefWeb">
+   
+   <part name="p_ref_code" type="xsd:string" />
+   <part name="p_hsp_code" type="xsd:string" />
+   <part name="p_hsp_name" type="xsd:string" />
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ac_name" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+   <part name="p_in_cust_no1" type="xsd:string" />
+   <part name="p_in_cust_no2" type="xsd:string" />
+   <part name="p_in_cust_name" type="xsd:string" />
+</message>
+<message name="UpdateRefWebResponse">
+   
+   <part name="p_out_ACK" type="xsd:string" />
+</message>
+<message name="ConvertGHSPTo400">
+   
+   <part name="p_in_hsp_code_GRP" type="xsd:string" />
+</message>
+<message name="ConvertGHSPTo400Response">
+   
+   <part name="p_out_hsp_code_400" type="xsd:string" />
+   <part name="p_out_ACK" type="xsd:string" />
+</message>
+<message name="UpdateStatusFormA">
+   
+   <part name="p_ref_code" type="xsd:string" />
+   <part name="p_card_type" type="xsd:string" />
+   <part name="p_form_a_sts" type="xsd:string" />
+   <part name="p_form_a_document" type="xsd:string" />
+   <part name="p_form_a_remark" type="xsd:string" />
+</message>
+<message name="UpdateStatusFormAResponse">
+   
+   <part name="p_out_ACK" type="xsd:string" />
+</message>
+<message name="GetQueryFormB">
+   
+   <part name="p_CardInput" type="xsd:string" />
+   <part name="p_TreatDate_From" type="xsd:string" />
+   <part name="p_TreatDate_To" type="xsd:string" />
+   <part name="p_hsp_code" type="xsd:string" />
+</message>
+<message name="GetQueryFormBResponse">
+   
+   <part name="p_out_HeadFormB" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetDetailFormB">
+   
+   <part name="p_ref_code" type="xsd:string" />
+</message>
+<message name="GetDetailFormBResponse">
+   
+   <part name="p_out_card_no" type="xsd:string" />
+   <part name="p_out_cust_name" type="xsd:string" />
+   <part name="p_out_treat_date" type="xsd:string" />
+   <part name="p_out_receive_b_date" type="xsd:string" />
+   <part name="p_out_form_b_sts" type="xsd:string" />
+   <part name="p_out_discharge_date" type="xsd:string" />
+   <part name="p_out_receive_time_b" type="xsd:string" />
+   <part name="p_out_send_time_b" type="xsd:string" />
+   <part name="p_out_receive_time_b2" type="xsd:string" />
+   <part name="p_out_send_time_b2" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetMemberIVR">
+   
+   <part name="p_CardInput" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_ExpireDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+</message>
+<message name="GetMemberIVRResponse">
+   
+   <part name="p_out_isFound_ac" type="xsd:string" />
+   <part name="p_out_benefit_sts" type="xsd:string" />
+   <part name="p_out_grp_code" type="xsd:string" />
+   <part name="p_out_ac_code" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_cust_no1" type="xsd:string" />
+   <part name="p_out_cust_no2" type="xsd:string" />
+   <part name="p_out_cust_name" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_plan_e_date" type="xsd:string" />
+   <part name="p_out_pol_year" type="xsd:string" />
+</message>
+<message name="UpdateRefIVR">
+   
+   <part name="p_ref_code" type="xsd:string" />
+   <part name="p_hsp_code" type="xsd:string" />
+   <part name="p_hsp_name" type="xsd:string" />
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ac_name" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_TreatDate" type="xsd:string" />
+   <part name="p_TreatTime" type="xsd:string" />
+   <part name="p_in_cust_no1" type="xsd:string" />
+   <part name="p_in_cust_no2" type="xsd:string" />
+   <part name="p_in_cust_name" type="xsd:string" />
+</message>
+<message name="UpdateRefIVRResponse">
+   
+   <part name="p_out_ACK" type="xsd:string" />
+</message>
+<message name="GetRunningIVR">
+   
+</message>
+<message name="GetRunningIVRResponse">
+   
+   <part name="p_out_Running" type="xsd:string" />
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="UpRunningIVR">
+   
+   <part name="p_in_Running" type="xsd:string" />
+</message>
+<message name="UpRunningIVRResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+
+<portType name="MagicWS_EasyCareGroupPortType">
+         <operation name="GetBenefitMember" parameterOrder="p_CardInput p_TreatDate p_TreatTime p_out_isFound_ac p_out_benefit_sts p_out_grp_code p_out_ac_code p_out_ac_name p_out_cust_no1 p_out_cust_no2 p_out_cust_name p_out_cust_dob p_out_cust_age p_out_card_type p_out_effect_date p_out_plan_e_date p_out_cust_notepad p_out_plan_notepad p_out_ben_tab_code p_out_ben_tab_s_date p_out_end_no p_out_pol_year">
+         <input message="tns:GetBenefitMember" />
+         <output message="tns:GetBenefitMemberResponse"/>
+      </operation>
+         <operation name="GetBenefitIPDList" parameterOrder="p_CardInput p_TreatDate p_TreatTime p_grp_code p_ac_code p_ben_tab_code p_ben_tab_s_date p_end_no p_out_benefit_ipd p_out_isFound_ipd">
+         <input message="tns:GetBenefitIPDList" />
+         <output message="tns:GetBenefitIPDListResponse"/>
+      </operation>
+         <operation name="GetBenefitOPDList" parameterOrder="p_CardInput p_TreatDate p_TreatTime p_grp_code p_ac_code p_ben_tab_code p_ben_tab_s_date p_end_no p_out_benefit_opd p_out_isFound_opd">
+         <input message="tns:GetBenefitOPDList" />
+         <output message="tns:GetBenefitOPDListResponse"/>
+      </operation>
+         <operation name="UpdateRefWeb" parameterOrder="p_ref_code p_hsp_code p_hsp_name p_in_grp_code p_in_ac_code p_in_ac_name p_in_pol_year p_TreatDate p_TreatTime p_in_cust_no1 p_in_cust_no2 p_in_cust_name p_out_ACK">
+         <input message="tns:UpdateRefWeb" />
+         <output message="tns:UpdateRefWebResponse"/>
+      </operation>
+         <operation name="ConvertGHSPTo400" parameterOrder="p_in_hsp_code_GRP p_out_hsp_code_400 p_out_ACK">
+         <input message="tns:ConvertGHSPTo400" />
+         <output message="tns:ConvertGHSPTo400Response"/>
+      </operation>
+         <operation name="UpdateStatusFormA" parameterOrder="p_ref_code p_card_type p_form_a_sts p_form_a_document p_form_a_remark p_out_ACK">
+         <input message="tns:UpdateStatusFormA" />
+         <output message="tns:UpdateStatusFormAResponse"/>
+      </operation>
+         <operation name="GetQueryFormB" parameterOrder="p_CardInput p_TreatDate_From p_TreatDate_To p_hsp_code p_out_HeadFormB p_out_isFound">
+         <input message="tns:GetQueryFormB" />
+         <output message="tns:GetQueryFormBResponse"/>
+      </operation>
+         <operation name="GetDetailFormB" parameterOrder="p_ref_code p_out_card_no p_out_cust_name p_out_treat_date p_out_receive_b_date p_out_form_b_sts p_out_discharge_date p_out_receive_time_b p_out_send_time_b p_out_receive_time_b2 p_out_send_time_b2 p_out_isFound">
+         <input message="tns:GetDetailFormB" />
+         <output message="tns:GetDetailFormBResponse"/>
+      </operation>
+         <operation name="GetMemberIVR" parameterOrder="p_CardInput p_TreatDate p_ExpireDate p_TreatTime p_out_isFound_ac p_out_benefit_sts p_out_grp_code p_out_ac_code p_out_ac_name p_out_cust_no1 p_out_cust_no2 p_out_cust_name p_out_effect_date p_out_plan_e_date p_out_pol_year">
+         <input message="tns:GetMemberIVR" />
+         <output message="tns:GetMemberIVRResponse"/>
+      </operation>
+         <operation name="UpdateRefIVR" parameterOrder="p_ref_code p_hsp_code p_hsp_name p_in_grp_code p_in_ac_code p_in_ac_name p_in_pol_year p_TreatDate p_TreatTime p_in_cust_no1 p_in_cust_no2 p_in_cust_name p_out_ACK">
+         <input message="tns:UpdateRefIVR" />
+         <output message="tns:UpdateRefIVRResponse"/>
+      </operation>
+         <operation name="GetRunningIVR" parameterOrder="p_out_Running p_out_ack">
+         <input message="tns:GetRunningIVR" />
+         <output message="tns:GetRunningIVRResponse"/>
+      </operation>
+         <operation name="UpRunningIVR" parameterOrder="p_in_Running p_out_ack">
+         <input message="tns:UpRunningIVR" />
+         <output message="tns:UpRunningIVRResponse"/>
+      </operation>
+   </portType>
+
+<binding name="MagicWS_EasyCareGroupBinding"
+   type="tns:MagicWS_EasyCareGroupPortType">
+   <soap:binding  transport="http://schemas.xmlsoap.org/soap/http" />
+         <operation name="GetBenefitMember">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C223230213C213230213C203230213C293130213C283130213C273130213C263130213C253130213C243130213C233130213C223130213C213130213C203130213C2930213C2830213C2730213C2630213C2530213C24302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitIPDList">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C203130213C29302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitOPDList">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C203130213C29302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="UpdateRefWeb">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2331302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="ConvertGHSPTo400">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2330213C22302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="UpdateStatusFormA">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C26302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetQueryFormB">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2630213C25302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetDetailFormB">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C223130213C213130213C203130213C2930213C2830213C2730213C2630213C2530213C2430213C2330213C22302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetMemberIVR">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C253130213C243130213C233130213C223130213C213130213C203130213C2930213C2830213C2730213C2630213C25302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="UpdateRefIVR">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2331302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetRunningIVR">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2230213C21302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="UpRunningIVR">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F50525745425143495351454A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_EasyCareGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+   </binding>
+<service name="MagicWS_EasyCareGroup">
+   <documentation></documentation>
+   <port name="tns:MagicWS_EasyCareGroupPortType" binding="tns:MagicWS_EasyCareGroupBinding">
+      <soap:address location="http://10.1.0.193/Magic94Scripts/MGRQISPI94.dll" />
+   </port>
+</service>
+</definitions>
+
+
+

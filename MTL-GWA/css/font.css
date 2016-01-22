@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* font */
+.fontontop {
+	font-family: "TH Sarabun New";
+	font-size: 20px;
+}
+.fontonlabel {
+	font-family: "TH Sarabun New";
+	font-size: 20px;
+	height:27px;
+}
+.fontonheader {
+	font-family: "TH Sarabun New";
+	font-size: 40px;
+	font-weight:bold;
+}
+.fontcmd {
+	font-family: "TH Sarabun New";
+	font-size: 22px;
+	font-weight:bold;
+	width: 150px;
+}

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FF9B6C1-F3AC-4B0A-BB11-290AE163DFB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Para</RootNamespace>
+    <AssemblyName>Para</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Para.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Para.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallWS\InputHltClmPaidByDiagnosePara.vb" />
+    <Compile Include="CallWS\InputDeleteUserProfileDetailPara.vb" />
+    <Compile Include="CallWS\InputChangePasswordPara.vb" />
+    <Compile Include="CallWS\InputChangeUserProfilePara.vb" />
+    <Compile Include="CallWS\InputDeleteUserProfilePara.vb" />
+    <Compile Include="CallWS\InputDelHltClmPaidByBenefitPara.vb" />
+    <Compile Include="CallWS\InputGetAccountDetailPara.vb" />
+    <Compile Include="CallWS\InputGetAccountNamePara.vb" />
+    <Compile Include="CallWS\InputGetAccountUserPofilePara.vb" />
+    <Compile Include="CallWS\InputGetBenefitHealthDentalPara.vb" />
+    <Compile Include="CallWS\InputGetBenefitHealthIPDPara.vb" />
+    <Compile Include="CallWS\InputGetBenefitHealthMajorMedPara.vb" />
+    <Compile Include="CallWS\InputGetBenefitHealthMaternityPara.vb" />
+    <Compile Include="CallWS\InputGetBenefitHealthOPDPara.vb" />
+    <Compile Include="CallWS\InputGetBenefitNonHealthPara.vb" />
+    <Compile Include="CallWS\InputGetBrokerNameListPara.vb" />
+    <Compile Include="CallWS\InputGetBrokerNamePara.vb" />
+    <Compile Include="CallWS\InputGetContractNamePara.vb" />
+    <Compile Include="CallWS\InputGetDetailMemberPara.vb" />
+    <Compile Include="CallWS\InputGetQueryMemberPara.vb" />
+    <Compile Include="CallWS\InputGetSectionNameListPara.vb" />
+    <Compile Include="CallWS\InputGetUserJoinCasePara.vb" />
+    <Compile Include="CallWS\InputGetUserProfilePara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByAcc_EmpPara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByBenefitGraphPara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByBenefitPara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByHospitalPara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByPlanRelationPara.vb" />
+    <Compile Include="CallWS\InputHltClmPaidByPlanRelation_GraphPara.vb" />
+    <Compile Include="CallWS\InputInsertProfileDetailPara.vb" />
+    <Compile Include="CallWS\InputInsertUserProfilePara.vb" />
+    <Compile Include="CallWS\InputUpdateUserProfilePara.vb" />
+    <Compile Include="Common\TmpFileUploadPara.vb" />
+    <Compile Include="Common\UserProfilePara.vb" />
+    <Compile Include="Common\Utilities\Constant.vb" />
+    <Compile Include="Common\LoginSessionPara.vb" />
+    <Compile Include="Common\Utilities\MessageResources.vb" />
+    <Compile Include="CallWS\InputGetAccountNameListPara.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="CallWS\InputGetQueryAccountPara.vb" />
+    <Compile Include="OutputWS\OutputDeleteUserProfileDetailPara.vb" />
+    <Compile Include="OutputWS\OutputDelHltClmPaidByBenefitPara.vb" />
+    <Compile Include="OutputWS\OutputGetAccountNameListPara.vb" />
+    <Compile Include="OutputWS\OutputGetAccountNamePara.vb" />
+    <Compile Include="OutputWS\OutputGetAccountUserPofilePara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitHealthDentalPara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitHealthIPDPara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitHealthMajorMedPara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitHealthMaternityPara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitHealthOPDPara.vb" />
+    <Compile Include="OutputWS\OutputGetBenefitNonHealthPara.vb" />
+    <Compile Include="OutputWS\OutputGetBrokerNameListPara.vb" />
+    <Compile Include="OutputWS\OutputGetBrokerNamePara.vb" />
+    <Compile Include="OutputWS\OutputGetSectionNameListPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByAc_EmpPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByBenefitGraphPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByBenefitPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByDiagnosePara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByHospitalPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByPlanRelationPara.vb" />
+    <Compile Include="OutputWS\OutputHltClmPaidByPlanRelation_GraphPara.vb" />
+    <Compile Include="OutputWS\OutputInsertUserProfileDetailPara.vb" />
+    <Compile Include="OutputWS\OutputDeleteUserProfilePara.vb" />
+    <Compile Include="OutputWS\OutputChangePasswordPara.vb" />
+    <Compile Include="OutputWS\OutputChangeUserProfilePara.vb" />
+    <Compile Include="OutputWS\OutputGetAccountDetailPara.vb" />
+    <Compile Include="OutputWS\OutputGetContractNamePara.vb" />
+    <Compile Include="OutputWS\OutputGetDetailMemberPara.vb" />
+    <Compile Include="OutputWS\OutputGetQueryAccountPara.vb" />
+    <Compile Include="OutputWS\OutputGetQueryMemberPara.vb" />
+    <Compile Include="OutputWS\OutputGetUserJoinCasePara.vb" />
+    <Compile Include="OutputWS\OutputGetUserProfilePara.vb" />
+    <Compile Include="OutputWS\OutputInsertUserProfilePara.vb" />
+    <Compile Include="OutputWS\OutputUpdateUserProfilePara.vb" />
+    <Compile Include="TABLE\ClaimAttachFilePara.vb" />
+    <Compile Include="TABLE\ContactUsPara.vb" />
+    <Compile Include="TABLE\DownloadPara.vb" />
+    <Compile Include="TABLE\DownloadTypePara.vb" />
+    <Compile Include="TABLE\FaqFilePara.vb" />
+    <Compile Include="TABLE\FaqKeywordPara.vb" />
+    <Compile Include="TABLE\FaqPara.vb" />
+    <Compile Include="TABLE\LogErrorPara.vb" />
+    <Compile Include="TABLE\LoginHistoryPara.vb" />
+    <Compile Include="TABLE\LogTransPara.vb" />
+    <Compile Include="TABLE\MenuPara.vb" />
+    <Compile Include="TABLE\ModulePara.vb" />
+    <Compile Include="TABLE\PolicyServiceTypePara.vb" />
+    <Compile Include="TABLE\RoleScreenPara.vb" />
+    <Compile Include="TABLE\ScreenPara.vb" />
+    <Compile Include="TABLE\SysconfigPara.vb" />
+    <Compile Include="TABLE\UsersPara.vb" />
+    <Compile Include="TABLE\UsersPwdChangeHistoryPara.vb" />
+    <Compile Include="TABLE\UsersResponseCompanyPara.vb" />
+    <Compile Include="VIEW\VMenuListPara.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

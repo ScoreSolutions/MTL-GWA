@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions targetNamespace="urn:magic.RUNGTIWA.MagicWS_WebGroup"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+            
+             xmlns:tns="urn:magic.RUNGTIWA.MagicWS_WebGroup"
+>
+<documentation>
+WSDL Builder (Magic eDeveloper v9.4)
+Created by   : ---
+Created Date : 12/06/2012 Time :14:20:08
+</documentation>
+
+ 
+
+ 
+<message name="GetUserProfile">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_user_passwd" type="xsd:string" />
+</message>
+<message name="GetUserProfileResponse">
+   
+   <part name="p_out_user_type" type="xsd:string" />
+   <part name="p_out_user_name_t" type="xsd:string" />
+   <part name="p_out_user_name_e" type="xsd:string" />
+   <part name="p_out_broker_code" type="xsd:string" />
+   <part name="p_out_ac_code" type="xsd:string" />
+   <part name="p_out_company_name" type="xsd:string" />
+   <part name="p_out_passwd_date" type="xsd:string" />
+   <part name="p_out_user_s_date" type="xsd:string" />
+   <part name="p_out_user_e_date" type="xsd:string" />
+   <part name="p_out_user_level" type="xsd:string" />
+   <part name="p_out_user_email" type="xsd:string" />
+   <part name="p_out_user_tel" type="xsd:string" />
+   <part name="p_out_marker_email" type="xsd:string" />
+   <part name="p_out_market_cc_email" type="xsd:string" />
+   <part name="p_out_claim_email" type="xsd:string" />
+   <part name="p_out_claim_cc_email" type="xsd:string" />
+   <part name="p_out_disc_reason" type="xsd:string" />
+   <part name="p_out_is_first_login" type="xsd:string" />
+   <part name="p_out_login_fail_count" type="xsd:string" />
+   <part name="p_out_input_person" type="xsd:string" />
+   <part name="p_out_mnt_dttm" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetUserJoinCase">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="GetUserJoinCaseResponse">
+   
+   <part name="p_out_case" type="xsd:string" />
+   <part name="p_out_case2" type="xsd:string" />
+   <part name="p_out_case3" type="xsd:string" />
+   <part name="p_out_case4" type="xsd:string" />
+   <part name="p_out_case5" type="xsd:string" />
+   <part name="p_out_case6" type="xsd:string" />
+   <part name="p_out_case7" type="xsd:string" />
+   <part name="p_out_case8" type="xsd:string" />
+   <part name="p_out_case9" type="xsd:string" />
+   <part name="p_out_case10" type="xsd:string" />
+   <part name="p_out_msg_data_over" type="xsd:string" />
+   <part name="p_out_isFoundCase" type="xsd:string" />
+</message>
+<message name="GetContactName">
+   
+   <part name="p_in_gpo_user_id" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetContactNameResponse">
+   
+   <part name="p_out_gpo_name" type="xsd:string" />
+   <part name="p_out_gpo_email" type="xsd:string" />
+   <part name="p_out_gpo_tel" type="xsd:string" />
+   <part name="p_out_gpo_cc_email" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="ChangeUserProfile">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_user_passwd" type="xsd:string" />
+   <part name="p_in_user_email" type="xsd:string" />
+   <part name="p_in_user_tel" type="xsd:string" />
+</message>
+<message name="ChangeUserProfileResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="ChangePassword">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_user_passwd" type="xsd:string" />
+   <part name="p_in_pass_date" type="xsd:string" />
+   <part name="p_in_input_person" type="xsd:string" />
+   <part name="p_in_mnt_dttm" type="xsd:string" />
+</message>
+<message name="ChangePasswordResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="GetQueryMember">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_sect_code" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+   <part name="p_in_member_no" type="xsd:string" />
+   <part name="p_in_employee_no" type="xsd:string" />
+   <part name="p_in_hlt_card_no" type="xsd:string" />
+   <part name="p_in_mem_name" type="xsd:string" />
+   <part name="p_in_mem_surname" type="xsd:string" />
+</message>
+<message name="GetQueryMemberResponse">
+   
+   <part name="p_out_mem_search" type="xsd:string" />
+   <part name="p_out_mem_search2" type="xsd:string" />
+   <part name="p_out_mem_search3" type="xsd:string" />
+   <part name="p_out_msg_data_over" type="xsd:string" />
+   <part name="p_out_isFound_mem" type="xsd:string" />
+</message>
+<message name="GetDetailMember">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+   <part name="p_in_member_no" type="xsd:string" />
+</message>
+<message name="GetDetailMemberResponse">
+   
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_plan_e_date" type="xsd:string" />
+   <part name="p_out_benefit_sts" type="xsd:string" />
+   <part name="p_out_mem_dob" type="xsd:string" />
+   <part name="p_out_mem_age" type="xsd:string" />
+   <part name="p_out_mem_sex" type="xsd:string" />
+   <part name="p_out_mem_sect" type="xsd:string" />
+   <part name="p_out_mem_bkac_no" type="xsd:string" />
+   <part name="p_out_hlt_card" type="xsd:string" />
+   <part name="p_out_consider" type="xsd:string" />
+   <part name="p_out_plan_notepad1" type="xsd:string" />
+   <part name="p_out_plan_notepad2" type="xsd:string" />
+   <part name="p_out_plan_nonhlt" type="xsd:string" />
+   <part name="p_out_plan_code_h1" type="xsd:string" />
+   <part name="p_out_plan_code_h2" type="xsd:string" />
+   <part name="p_out_plan_hlt1" type="xsd:string" />
+   <part name="p_out_plan_hlt2" type="xsd:string" />
+   <part name="p_out_isFound_det" type="xsd:string" />
+</message>
+<message name="GetSectionNameList">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_sect_code" type="xsd:string" />
+   <part name="p_in_sect_name" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetSectionNameListResponse">
+   
+   <part name="p_out_sect_search" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="HltClmPaidByBenefit">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="HltClmPaidByBenefitResponse">
+   
+   <part name="p_out_as_of_date" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_expire_date" type="xsd:string" />
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_hlt_clm" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="HltClmPaidByBenefit_Graph">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+</message>
+<message name="HltClmPaidByBenefit_GraphResponse">
+   
+   <part name="p_out_clm_by_treat_grp" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByBenefit">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByBenefitResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="HltClmPaidByAcc_Emp">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+   <part name="p_in_section_code" type="xsd:string" />
+   <part name="p_in_sort_type" type="xsd:string" />
+   <part name="p_in_top_level" type="xsd:string" />
+</message>
+<message name="HltClmPaidByAcc_EmpResponse">
+   
+   <part name="p_out_as_of_date" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_expire_date" type="xsd:string" />
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_hlt_clm" type="xsd:string" />
+   <part name="p_out_hlt_clm2" type="xsd:string" />
+   <part name="p_out_hlt_clm3" type="xsd:string" />
+   <part name="p_out_type" type="xsd:string" />
+   <part name="p_out_msg" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByAcc_Emp">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByAcc_EmpResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="InsertUserProfile">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_user_passwd" type="xsd:string" />
+   <part name="p_in_user_type" type="xsd:string" />
+   <part name="p_in_user_name_t" type="xsd:string" />
+   <part name="p_in_user_name_e" type="xsd:string" />
+   <part name="p_in_user_broker_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_company_name" type="xsd:string" />
+   <part name="p_in_passwd_date" type="xsd:string" />
+   <part name="p_in_user_s_date" type="xsd:string" />
+   <part name="p_in_user_e_date" type="xsd:string" />
+   <part name="p_in_user_level" type="xsd:string" />
+   <part name="p_in_user_email" type="xsd:string" />
+   <part name="p_in_user_tel" type="xsd:string" />
+   <part name="p_in_market_email" type="xsd:string" />
+   <part name="p_in_market_cc_email" type="xsd:string" />
+   <part name="p_in_claim_email" type="xsd:string" />
+   <part name="p_in_claim_cc_email" type="xsd:string" />
+   <part name="p_in_disc_reason" type="xsd:string" />
+   <part name="p_in_user_status" type="xsd:string" />
+   <part name="p_in_is_first_login" type="xsd:string" />
+   <part name="p_in_login_fail_count" type="xsd:string" />
+   <part name="p_in_input_person" type="xsd:string" />
+   <part name="p_in_create_dttm" type="xsd:string" />
+   <part name="p_in_mnt_dttm" type="xsd:string" />
+</message>
+<message name="InsertUserProfileResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="UpdateUserProfile">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_user_type" type="xsd:string" />
+   <part name="p_in_user_name_t" type="xsd:string" />
+   <part name="p_in_user_name_e" type="xsd:string" />
+   <part name="p_in_user_broker_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_company_name" type="xsd:string" />
+   <part name="p_in_passwd_date" type="xsd:string" />
+   <part name="p_in_user_s_date" type="xsd:string" />
+   <part name="p_in_user_e_date" type="xsd:string" />
+   <part name="p_in_user_level" type="xsd:string" />
+   <part name="p_in_user_email" type="xsd:string" />
+   <part name="p_in_user_tel" type="xsd:string" />
+   <part name="p_in_market_email" type="xsd:string" />
+   <part name="p_in_market_cc_email" type="xsd:string" />
+   <part name="p_in_claim_email" type="xsd:string" />
+   <part name="p_in_claim_cc_email" type="xsd:string" />
+   <part name="p_in_disc_reason" type="xsd:string" />
+   <part name="p_in_user_status" type="xsd:string" />
+   <part name="p_in_input_person" type="xsd:string" />
+   <part name="p_in_mnt_dttm" type="xsd:string" />
+</message>
+<message name="UpdateUserProfileResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="DeleteUserProfile">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DeleteUserProfileResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="InsertUserProfileDetail">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_user_gpo_id" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+   <part name="p_in_input_person" type="xsd:string" />
+   <part name="p_in_create_dttm" type="xsd:string" />
+   <part name="p_in_mnt_dttm" type="xsd:string" />
+</message>
+<message name="InsertUserProfileDetailResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="DeleteUserProfileDetail">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_group_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+</message>
+<message name="DeleteUserProfileDetailResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="GetBrokerName">
+   
+   <part name="p_in_broker_code" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBrokerNameResponse">
+   
+   <part name="p_out_broker_name" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetBrokerNameList">
+   
+   <part name="p_in_broker_code" type="xsd:string" />
+   <part name="p_in_broker_name" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBrokerNameListResponse">
+   
+   <part name="p_out_broker_search" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetAccountName">
+   
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetAccountNameResponse">
+   
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetAccountNameList">
+   
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ac_name" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetAccountNameListResponse">
+   
+   <part name="p_out_ac_search" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetAccountUserProfile">
+   
+   <part name="p_in_ac_code" type="xsd:string" />
+</message>
+<message name="GetAccountUserProfileResponse">
+   
+   <part name="p_out_grp_code" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_pol_no" type="xsd:string" />
+   <part name="p_out_pol_year" type="xsd:string" />
+   <part name="p_out_user_gpo_id" type="xsd:string" />
+   <part name="p_out_language" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="GetAccountDetail">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetAccountDetailResponse">
+   
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_payment_mode" type="xsd:string" />
+   <part name="p_out_account_sts" type="xsd:string" />
+   <part name="p_out_address" type="xsd:string" />
+   <part name="p_out_fcl_amt" type="xsd:string" />
+   <part name="p_out_health_card" type="xsd:string" />
+   <part name="p_out_head_flag" type="xsd:string" />
+   <part name="p_out_min_age" type="xsd:string" />
+   <part name="p_out_max_age" type="xsd:string" />
+   <part name="p_out_contact_person" type="xsd:string" />
+   <part name="p_out_plan" type="xsd:string" />
+   <part name="p_out_isFound_detail" type="xsd:string" />
+</message>
+<message name="GetQueryAccount">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ac_name" type="xsd:string" />
+</message>
+<message name="GetQueryAccountResponse">
+   
+   <part name="p_out_ac_search" type="xsd:string" />
+   <part name="p_out_isFound_Ac" type="xsd:string" />
+</message>
+<message name="GetBenefitNonHealth">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitNonHealthResponse">
+   
+   <part name="p_out_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_add_risk_flag" type="xsd:string" />
+   <part name="p_out_add_risk" type="xsd:string" />
+   <part name="p_out_remark" type="xsd:string" />
+   <part name="p_out_isFound_non_health" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthIPD">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthIPDResponse">
+   
+   <part name="p_out_sub_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_isFound_ipd" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthOPD">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthOPDResponse">
+   
+   <part name="p_out_sub_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_isFound_opd" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthDental">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthDentalResponse">
+   
+   <part name="p_out_sub_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_isFound_opd" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthMajorMed">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthMajorMedResponse">
+   
+   <part name="p_out_sub_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_isFound_ipd" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthMaternity">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_ben_tab_code" type="xsd:string" />
+   <part name="p_in_ben_tab_s_date" type="xsd:string" />
+   <part name="p_in_ben_tab_end_no" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="GetBenefitHealthMaternityResponse">
+   
+   <part name="p_out_sub_ins_type" type="xsd:string" />
+   <part name="p_out_benefit" type="xsd:string" />
+   <part name="p_out_isFound_mater" type="xsd:string" />
+</message>
+<message name="HltClmPaidByDiagnose">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_sort_type" type="xsd:string" />
+   <part name="p_in_top_level" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="HltClmPaidByDiagnoseResponse">
+   
+   <part name="p_out_as_of_date" type="xsd:string" />
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_expire_date" type="xsd:string" />
+   <part name="p_out_hlt_clm1" type="xsd:string" />
+   <part name="p_out_hlt_clm2" type="xsd:string" />
+   <part name="p_out_hlt_clm3" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByDiagnose">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByDiagnoseResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="HltClmPaidByHospital">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_sort_type" type="xsd:string" />
+   <part name="p_in_top_level" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="HltClmPaidByHospitalResponse">
+   
+   <part name="p_out_as_of_date" type="xsd:string" />
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_expire_date" type="xsd:string" />
+   <part name="p_out_hlt_clm1" type="xsd:string" />
+   <part name="p_out_hlt_clm2" type="xsd:string" />
+   <part name="p_out_hlt_clm3" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByHospital">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByHospitalResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+<message name="HltClmPaidByPlanRelation">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_no" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+   <part name="p_in_user_id" type="xsd:string" />
+   <part name="p_in_language" type="xsd:string" />
+</message>
+<message name="HltClmPaidByPlanRelationResponse">
+   
+   <part name="p_out_as_of_date" type="xsd:string" />
+   <part name="p_out_pol_name" type="xsd:string" />
+   <part name="p_out_ac_name" type="xsd:string" />
+   <part name="p_out_effect_date" type="xsd:string" />
+   <part name="p_out_expire_date" type="xsd:string" />
+   <part name="p_out_hlt_clm" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="HltClmPaidByPlanRelation_Graph">
+   
+   <part name="p_in_grp_code" type="xsd:string" />
+   <part name="p_in_ac_code" type="xsd:string" />
+   <part name="p_in_pol_year" type="xsd:string" />
+</message>
+<message name="HltClmPaidByPlanRelation_GraphResponse">
+   
+   <part name="p_out_clm_by_treat_grp" type="xsd:string" />
+   <part name="p_out_isFound" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByPlanRelation">
+   
+   <part name="p_in_user_id" type="xsd:string" />
+</message>
+<message name="DelHltClmPaidByPlanRelationResponse">
+   
+   <part name="p_out_ack" type="xsd:string" />
+</message>
+
+<portType name="MagicWS_WebGroupPortType">
+         <operation name="GetUserProfile" parameterOrder="p_in_user_id p_in_user_passwd p_out_user_type p_out_user_name_t p_out_user_name_e p_out_broker_code p_out_ac_code p_out_company_name p_out_passwd_date p_out_user_s_date p_out_user_e_date p_out_user_level p_out_user_email p_out_user_tel p_out_marker_email p_out_market_cc_email p_out_claim_email p_out_claim_cc_email p_out_disc_reason p_out_is_first_login p_out_login_fail_count p_out_input_person p_out_mnt_dttm p_out_isFound">
+         <input message="tns:GetUserProfile" />
+         <output message="tns:GetUserProfileResponse"/>
+      </operation>
+         <operation name="GetUserJoinCase" parameterOrder="p_in_user_id p_out_case p_out_case2 p_out_case3 p_out_case4 p_out_case5 p_out_case6 p_out_case7 p_out_case8 p_out_case9 p_out_case10 p_out_msg_data_over p_out_isFoundCase">
+         <input message="tns:GetUserJoinCase" />
+         <output message="tns:GetUserJoinCaseResponse"/>
+      </operation>
+         <operation name="GetContactName" parameterOrder="p_in_gpo_user_id p_in_language p_out_gpo_name p_out_gpo_email p_out_gpo_tel p_out_gpo_cc_email p_out_isFound">
+         <input message="tns:GetContactName" />
+         <output message="tns:GetContactNameResponse"/>
+      </operation>
+         <operation name="ChangeUserProfile" parameterOrder="p_in_user_id p_in_user_passwd p_in_user_email p_in_user_tel p_out_ack">
+         <input message="tns:ChangeUserProfile" />
+         <output message="tns:ChangeUserProfileResponse"/>
+      </operation>
+         <operation name="ChangePassword" parameterOrder="p_in_user_id p_in_user_passwd p_in_pass_date p_in_input_person p_in_mnt_dttm p_out_ack">
+         <input message="tns:ChangePassword" />
+         <output message="tns:ChangePasswordResponse"/>
+      </operation>
+         <operation name="GetQueryMember" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_year p_in_sect_code p_in_language p_in_member_no p_in_employee_no p_in_hlt_card_no p_in_mem_name p_in_mem_surname p_out_mem_search p_out_mem_search2 p_out_mem_search3 p_out_msg_data_over p_out_isFound_mem">
+         <input message="tns:GetQueryMember" />
+         <output message="tns:GetQueryMemberResponse"/>
+      </operation>
+         <operation name="GetDetailMember" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_year p_in_language p_in_member_no p_out_effect_date p_out_plan_e_date p_out_benefit_sts p_out_mem_dob p_out_mem_age p_out_mem_sex p_out_mem_sect p_out_mem_bkac_no p_out_hlt_card p_out_consider p_out_plan_notepad1 p_out_plan_notepad2 p_out_plan_nonhlt p_out_plan_code_h1 p_out_plan_code_h2 p_out_plan_hlt1 p_out_plan_hlt2 p_out_isFound_det">
+         <input message="tns:GetDetailMember" />
+         <output message="tns:GetDetailMemberResponse"/>
+      </operation>
+         <operation name="GetSectionNameList" parameterOrder="p_in_grp_code p_in_ac_code p_in_sect_code p_in_sect_name p_in_language p_out_sect_search p_out_isFound">
+         <input message="tns:GetSectionNameList" />
+         <output message="tns:GetSectionNameListResponse"/>
+      </operation>
+         <operation name="HltClmPaidByBenefit" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_no p_in_pol_year p_in_user_id p_in_language p_out_as_of_date p_out_effect_date p_out_expire_date p_out_pol_name p_out_ac_name p_out_hlt_clm p_out_isFound">
+         <input message="tns:HltClmPaidByBenefit" />
+         <output message="tns:HltClmPaidByBenefitResponse"/>
+      </operation>
+         <operation name="HltClmPaidByBenefit_Graph" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_year p_out_clm_by_treat_grp p_out_isFound">
+         <input message="tns:HltClmPaidByBenefit_Graph" />
+         <output message="tns:HltClmPaidByBenefit_GraphResponse"/>
+      </operation>
+         <operation name="DelHltClmPaidByBenefit" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DelHltClmPaidByBenefit" />
+         <output message="tns:DelHltClmPaidByBenefitResponse"/>
+      </operation>
+         <operation name="HltClmPaidByAcc_Emp" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_no p_in_pol_year p_in_user_id p_in_language p_in_section_code p_in_sort_type p_in_top_level p_out_as_of_date p_out_effect_date p_out_expire_date p_out_pol_name p_out_ac_name p_out_hlt_clm p_out_hlt_clm2 p_out_hlt_clm3 p_out_type p_out_msg p_out_isFound">
+         <input message="tns:HltClmPaidByAcc_Emp" />
+         <output message="tns:HltClmPaidByAcc_EmpResponse"/>
+      </operation>
+         <operation name="DelHltClmPaidByAcc_Emp" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DelHltClmPaidByAcc_Emp" />
+         <output message="tns:DelHltClmPaidByAcc_EmpResponse"/>
+      </operation>
+         <operation name="InsertUserProfile" parameterOrder="p_in_user_id p_in_user_passwd p_in_user_type p_in_user_name_t p_in_user_name_e p_in_user_broker_code p_in_ac_code p_in_company_name p_in_passwd_date p_in_user_s_date p_in_user_e_date p_in_user_level p_in_user_email p_in_user_tel p_in_market_email p_in_market_cc_email p_in_claim_email p_in_claim_cc_email p_in_disc_reason p_in_user_status p_in_is_first_login p_in_login_fail_count p_in_input_person p_in_create_dttm p_in_mnt_dttm p_out_ack">
+         <input message="tns:InsertUserProfile" />
+         <output message="tns:InsertUserProfileResponse"/>
+      </operation>
+         <operation name="UpdateUserProfile" parameterOrder="p_in_user_id p_in_user_type p_in_user_name_t p_in_user_name_e p_in_user_broker_code p_in_ac_code p_in_company_name p_in_passwd_date p_in_user_s_date p_in_user_e_date p_in_user_level p_in_user_email p_in_user_tel p_in_market_email p_in_market_cc_email p_in_claim_email p_in_claim_cc_email p_in_disc_reason p_in_user_status p_in_input_person p_in_mnt_dttm p_out_ack">
+         <input message="tns:UpdateUserProfile" />
+         <output message="tns:UpdateUserProfileResponse"/>
+      </operation>
+         <operation name="DeleteUserProfile" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DeleteUserProfile" />
+         <output message="tns:DeleteUserProfileResponse"/>
+      </operation>
+         <operation name="InsertUserProfileDetail" parameterOrder="p_in_user_id p_in_grp_code p_in_ac_code p_in_pol_year p_in_pol_no p_in_user_gpo_id p_in_language p_in_input_person p_in_create_dttm p_in_mnt_dttm p_out_ack">
+         <input message="tns:InsertUserProfileDetail" />
+         <output message="tns:InsertUserProfileDetailResponse"/>
+      </operation>
+         <operation name="DeleteUserProfileDetail" parameterOrder="p_in_user_id p_in_group_code p_in_ac_code p_out_ack">
+         <input message="tns:DeleteUserProfileDetail" />
+         <output message="tns:DeleteUserProfileDetailResponse"/>
+      </operation>
+         <operation name="GetBrokerName" parameterOrder="p_in_broker_code p_in_language p_out_broker_name p_out_isFound">
+         <input message="tns:GetBrokerName" />
+         <output message="tns:GetBrokerNameResponse"/>
+      </operation>
+         <operation name="GetBrokerNameList" parameterOrder="p_in_broker_code p_in_broker_name p_in_language p_out_broker_search p_out_isFound">
+         <input message="tns:GetBrokerNameList" />
+         <output message="tns:GetBrokerNameListResponse"/>
+      </operation>
+         <operation name="GetAccountName" parameterOrder="p_in_ac_code p_in_language p_out_ac_name p_out_isFound">
+         <input message="tns:GetAccountName" />
+         <output message="tns:GetAccountNameResponse"/>
+      </operation>
+         <operation name="GetAccountNameList" parameterOrder="p_in_ac_code p_in_ac_name p_in_language p_out_ac_search p_out_isFound">
+         <input message="tns:GetAccountNameList" />
+         <output message="tns:GetAccountNameListResponse"/>
+      </operation>
+         <operation name="GetAccountUserProfile" parameterOrder="p_in_ac_code p_out_grp_code p_out_ac_name p_out_pol_no p_out_pol_year p_out_user_gpo_id p_out_language p_out_isFound">
+         <input message="tns:GetAccountUserProfile" />
+         <output message="tns:GetAccountUserProfileResponse"/>
+      </operation>
+         <operation name="GetAccountDetail" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_year p_in_language p_out_pol_name p_out_payment_mode p_out_account_sts p_out_address p_out_fcl_amt p_out_health_card p_out_head_flag p_out_min_age p_out_max_age p_out_contact_person p_out_plan p_out_isFound_detail">
+         <input message="tns:GetAccountDetail" />
+         <output message="tns:GetAccountDetailResponse"/>
+      </operation>
+         <operation name="GetQueryAccount" parameterOrder="p_in_user_id p_in_grp_code p_in_pol_no p_in_ac_code p_in_ac_name p_out_ac_search p_out_isFound_Ac">
+         <input message="tns:GetQueryAccount" />
+         <output message="tns:GetQueryAccountResponse"/>
+      </operation>
+         <operation name="GetBenefitNonHealth" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_ins_type p_out_benefit p_out_add_risk_flag p_out_add_risk p_out_remark p_out_isFound_non_health">
+         <input message="tns:GetBenefitNonHealth" />
+         <output message="tns:GetBenefitNonHealthResponse"/>
+      </operation>
+         <operation name="GetBenefitHealthIPD" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_sub_ins_type p_out_benefit p_out_isFound_ipd">
+         <input message="tns:GetBenefitHealthIPD" />
+         <output message="tns:GetBenefitHealthIPDResponse"/>
+      </operation>
+         <operation name="GetBenefitHealthOPD" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_sub_ins_type p_out_benefit p_out_isFound_opd">
+         <input message="tns:GetBenefitHealthOPD" />
+         <output message="tns:GetBenefitHealthOPDResponse"/>
+      </operation>
+         <operation name="GetBenefitHealthDental" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_sub_ins_type p_out_benefit p_out_isFound_opd">
+         <input message="tns:GetBenefitHealthDental" />
+         <output message="tns:GetBenefitHealthDentalResponse"/>
+      </operation>
+         <operation name="GetBenefitHealthMajorMed" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_sub_ins_type p_out_benefit p_out_isFound_ipd">
+         <input message="tns:GetBenefitHealthMajorMed" />
+         <output message="tns:GetBenefitHealthMajorMedResponse"/>
+      </operation>
+         <operation name="GetBenefitHealthMaternity" parameterOrder="p_in_grp_code p_in_ac_code p_in_ben_tab_code p_in_ben_tab_s_date p_in_ben_tab_end_no p_in_language p_out_sub_ins_type p_out_benefit p_out_isFound_mater">
+         <input message="tns:GetBenefitHealthMaternity" />
+         <output message="tns:GetBenefitHealthMaternityResponse"/>
+      </operation>
+         <operation name="HltClmPaidByDiagnose" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_no p_in_pol_year p_in_user_id p_in_sort_type p_in_top_level p_in_language p_out_as_of_date p_out_pol_name p_out_ac_name p_out_effect_date p_out_expire_date p_out_hlt_clm1 p_out_hlt_clm2 p_out_hlt_clm3 p_out_isFound">
+         <input message="tns:HltClmPaidByDiagnose" />
+         <output message="tns:HltClmPaidByDiagnoseResponse"/>
+      </operation>
+         <operation name="DelHltClmPaidByDiagnose" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DelHltClmPaidByDiagnose" />
+         <output message="tns:DelHltClmPaidByDiagnoseResponse"/>
+      </operation>
+         <operation name="HltClmPaidByHospital" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_no p_in_pol_year p_in_user_id p_in_sort_type p_in_top_level p_in_language p_out_as_of_date p_out_pol_name p_out_ac_name p_out_effect_date p_out_expire_date p_out_hlt_clm1 p_out_hlt_clm2 p_out_hlt_clm3 p_out_isFound">
+         <input message="tns:HltClmPaidByHospital" />
+         <output message="tns:HltClmPaidByHospitalResponse"/>
+      </operation>
+         <operation name="DelHltClmPaidByHospital" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DelHltClmPaidByHospital" />
+         <output message="tns:DelHltClmPaidByHospitalResponse"/>
+      </operation>
+         <operation name="HltClmPaidByPlanRelation" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_no p_in_pol_year p_in_user_id p_in_language p_out_as_of_date p_out_pol_name p_out_ac_name p_out_effect_date p_out_expire_date p_out_hlt_clm p_out_isFound">
+         <input message="tns:HltClmPaidByPlanRelation" />
+         <output message="tns:HltClmPaidByPlanRelationResponse"/>
+      </operation>
+         <operation name="HltClmPaidByPlanRelation_Graph" parameterOrder="p_in_grp_code p_in_ac_code p_in_pol_year p_out_clm_by_treat_grp p_out_isFound">
+         <input message="tns:HltClmPaidByPlanRelation_Graph" />
+         <output message="tns:HltClmPaidByPlanRelation_GraphResponse"/>
+      </operation>
+         <operation name="DelHltClmPaidByPlanRelation" parameterOrder="p_in_user_id p_out_ack">
+         <input message="tns:DelHltClmPaidByPlanRelation" />
+         <output message="tns:DelHltClmPaidByPlanRelationResponse"/>
+      </operation>
+   </portType>
+
+<binding name="MagicWS_WebGroupBinding"
+   type="tns:MagicWS_WebGroupPortType">
+   <soap:binding  transport="http://schemas.xmlsoap.org/soap/http" />
+         <operation name="GetUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C243230213C233230213C223230213C213230213C203230213C293130213C283130213C273130213C263130213C253130213C243130213C233130213C223130213C213130213C203130213C2930213C2830213C2730213C2630213C2530213C2430213C23302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetUserJoinCase">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C233130213C223130213C213130213C203130213C2930213C2830213C2730213C2630213C2530213C2430213C2330213C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetContactName">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2730213C2630213C2530213C2430213C23302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="ChangeUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C25302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="ChangePassword">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C26302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetQueryMember">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C253130213C243130213C233130213C223130213C2131302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetDetailMember">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C233230213C223230213C213230213C203230213C293130213C283130213C273130213C263130213C253130213C243130213C233130213C223130213C213130213C203130213C2930213C2830213C2730213C26302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetSectionNameList">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2730213C26302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByBenefit">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C233130213C223130213C213130213C203130213C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByBenefit_Graph">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2530213C24302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DelHltClmPaidByBenefit">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByAcc_Emp">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C203230213C293130213C283130213C273130213C263130213C253130213C243130213C233130213C223130213C213130213C2031302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DelHltClmPaidByAcc_Emp">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="InsertUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2632302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="UpdateUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2232302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DeleteUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="InsertUserProfileDetail">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2131302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DeleteUserProfileDetail">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C24302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBrokerName">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2430213C23302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBrokerNameList">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2530213C24302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetAccountName">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2430213C23302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetAccountNameList">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2530213C24302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetAccountUserProfile">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2830213C2730213C2630213C2530213C2430213C2330213C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetAccountDetail">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C263130213C253130213C243130213C233130213C223130213C213130213C203130213C2930213C2830213C2730213C2630213C25302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetQueryAccount">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2730213C26302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitNonHealth">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C223130213C213130213C203130213C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitHealthIPD">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitHealthOPD">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitHealthDental">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitHealthMajorMed">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="GetBenefitHealthMaternity">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByDiagnose">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C273130213C263130213C253130213C243130213C233130213C223130213C213130213C203130213C29302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DelHltClmPaidByDiagnose">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByHospital">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C273130213C263130213C253130213C243130213C233130213C223130213C213130213C203130213C29302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DelHltClmPaidByHospital">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByPlanRelation">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C233130213C223130213C213130213C203130213C2930213C2830213C27302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="HltClmPaidByPlanRelation_Graph">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C2530213C24302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+         <operation name="DelHltClmPaidByPlanRelation">
+         <documentation></documentation>
+         <soap:operation style="rpc" soapAction="13C22302F2D2F2E6F69647163696C6070714F5052574245475A3360727" />
+         <input>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            
+         </input>
+         <output>
+            <soap:body use="encoded" namespace="urn:magic.RUNGTIWA.MagicWS_WebGroup" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+         </output>
+      </operation>
+   </binding>
+<service name="MagicWS_WebGroup">
+   <documentation></documentation>
+   <port name="tns:MagicWS_WebGroupPortType" binding="tns:MagicWS_WebGroupBinding">
+      <soap:address location="http://10.1.0.193/Magic94Scripts/MGRQISPI94.dll" />
+   </port>
+</service>
+</definitions>
+
+
+

@@ -1,0 +1,359 @@
+/*!
+ * Cascading Style Sheet
+ * Copyright 2011, Apisit Asavatappitak
+ * The8e88 Professional Developer - http://www.the8e88.com
+ * +668 1927 0996
+ * Date: Sat mar 14 09:09:09 2011
+ */
+
+/* reload all browser */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-size:100%;
+	margin:0;
+	padding:0;
+	/*width: 28px;
+	height: 28px;*/
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+html {
+	height:100%;
+	overflow:auto;
+	overflow-x:hidden;
+}
+body {
+	font:"TH Sarabun New"; font-size: 16pt;
+	/*color:#555;*/
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+}
+a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+	color:Red;
+}
+
+a img {
+	border:0;
+}
+table {
+	/*border-collapse:collapse;
+	border-spacing:0;*/
+}
+:focus {
+	outline:none;
+}
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom:1;
+}
+
+/**/
+div#container {
+	position:relative;
+	top: 4px;
+	left: -1px;
+}
+div#container h2 {
+	background:url(../images/bg/dot2.jpg) repeat-x 0 16px;
+	/*color:rgb(41, 135, 200);*/
+	font:"TH Sarabun New"; font-size: 16pt;
+	padding-top:5px;
+}
+div#container h2 span {
+	background:white url(../images/bg/dot3.jpg) no-repeat 0 8px;
+	padding:0 5px 0 10px;
+}
+div#container h2 span .heaer_red 
+{
+	color:rgb(201, 25, 7);
+ 	padding:0 5px 0 10px;
+}
+
+div#container h3 {
+	/*color:rgb(254, 101, 0);*/
+	font:1.2em vernada, Helvetica, sans-serif;
+	padding-top:15px;
+	font-weight:bold;
+	
+}
+
+
+table.data
+{
+
+	background:rgb(189, 190, 189);
+}
+
+
+table.data th {
+	background:rgb(41, 135, 200);
+	color:white;
+	font-size:1.0em;
+	padding:5px;
+}
+
+
+table.data th.bg_green
+{
+	background:rgb(11, 158, 25);
+}
+table.data th.bg_red
+{
+	background:rgb(238, 30, 8);
+}
+table.data th.bg_gold {
+	background:rgb(255, 204, 0);
+}
+
+
+ 
+ 
+table.data tr.row_style_table:hover {	 
+	 cursor:hand;
+ }
+ 
+ /*
+ table.data tr.row_style_table td:hover {	 
+	 background-color:#e8fbff;
+ }
+*/
+ 
+
+table.data td {
+	/*font-size:0.95em;*/
+	padding:5px;
+	background-color:#FFF;
+}
+	padding:5px;
+	background-color:#FFF;
+}
+table.data td {
+	text-align:center;
+}
+table.data td:first-child {
+	text-align:left;
+}
+table.data td.gray {
+	background:rgb(154, 154, 154);
+}
+table.data td.red {
+	background:rgb(238, 30, 8);
+}
+table.data td.gold {
+	background:rgb(255, 204, 0);
+}
+table.data td.green {
+	background:rgb(11, 158, 25);
+}
+table.data td.paging {
+	background:rgb(41, 135, 200) !important;
+	color:white;
+	text-align:right;
+}
+table.data td.paging ul {
+	float:right;
+}
+table.data td.paging li {
+	float:left;
+	padding:1px 4px;
+}
+
+/* tmp */
+div#wrap {
+	margin:0 auto;
+	padding:10px 0;
+	position:relative;
+	width:98%;
+}
+div#wrap select {
+	max-width:210px;
+	width:auto;
+}
+div#wrap input[type=text] {
+	background:white;
+	border:1px solid rgb(196, 196, 196);
+}
+div.singleCol {
+	background:rgb(212, 231, 244);
+	margin-bottom:10px;
+	padding:5px;
+	position:relative;
+}
+div.colLeft {
+	float:left;
+	overflow:hidden;
+	width:45.47%;
+}
+div.colRight {
+	float:left;
+	margin-left:10px;
+	overflow:hidden;
+	width:51.06%;
+}
+div.colLeft div,
+div.colRight div {
+	background:rgb(212, 231, 244);
+	margin-bottom:10px;
+	padding:5px;
+	position:relative;
+}
+.clt, .crt, .clb, .crb {
+	height:5px;
+	position:absolute;
+	width:5px;
+}
+.clt {
+	background:url(../images/bg/clt.jpg) no-repeat;
+	left:0;
+	top:0;
+}
+.crt {
+	background:url(../images/bg/crt.jpg) no-repeat;
+	right:0;
+	top:0;
+}
+.clb {
+	background:url(../images/bg/clb.jpg) no-repeat;
+	bottom:0;
+	left:0;
+}
+.crb {
+	background:url(../images/bg/crb.jpg) no-repeat;
+	bottom:0;
+	right:0;
+}
+
+table { font-size:11px; }
+table.dataTmp,
+table.dataTmp select,
+table.dataTmp input {
+	font-size:0.97em;
+}
+table.dataTmp th {
+	background:rgb(41, 135, 199);
+	color:white;
+	font-size:1em;
+	padding:5px;
+}
+table.dataTmp th:first-child {
+	background:rgb(41, 135, 199) url(../images/bg/th-clt.jpg) no-repeat;
+}
+table.dataTmp th:last-child {
+	background:rgb(41, 135, 199) url(../images/bg/th-crt.jpg) no-repeat 100% 0;
+}
+table.dataTmp td {
+	padding:3px;
+}
+table.dataTmp td table td {
+	padding:1px 0 1px 3px;
+}
+
+.indent {
+	padding:3px 3px 3px 20px !important;
+}
+
+.topic_cate
+{
+
+	float:right;
+	/*color:#555;*/
+	font-size:8pt;
+	
+}
+
+
+ul.categoryStatus {
+	background:url(../images/bg/head-legend.jpg) no-repeat;
+	margin-top:20px;
+	padding-top:20px;
+}
+ .gray {
+	background:url(../images/bg/gray-status.png) no-repeat;
+	color:rgb(120, 120, 120);
+	cursor:default;
+	padding:4px 0 3px 30px;
+	font:"TH Sarabun New"; font-size: 16pt;
+	color:#555;
+	 vertical-align:top;
+}
+ .red{
+	background:url(../images/bg/red-status.png) no-repeat;
+	font:8pt  tahoma, Helvetica, sans-serif;
+	color:#555;
+	padding:4px 0 3px 30px;
+    vertical-align:top;
+}
+ .yellow{
+	background:url(../images/bg/gold-status.png) no-repeat;
+	font:"TH Sarabun New"; font-size: 16pt;
+	color:#555;
+	padding:4px 0 3px 30px;
+	 vertical-align:top;
+}
+ .green {
+	background:url(../images/bg/green-status.png) no-repeat;
+	font:"TH Sarabun New"; font-size: 16pt;
+	color:#555;
+	padding:4px 0 3px 30px;
+	 vertical-align:top;
+}
+
+.text-red
+{
+	font-size:7pt;
+	color:Red;	
+}
+/*== add bubble */
+
+table.data td.red,
+table.data td.gold,
+table.data td.green {
+	cursor:pointer;
+	position:relative;
+}
+.bubble {
+	background:url(../images/bg/bubble.gif) no-repeat;
+	cursor:default;
+	display:none;
+	height:44px;
+	left:-285px;
+	padding:27px 17px 17px;
+	position:absolute;
+	text-align:left;
+	top:-35px;
+	width:249px;
+}
+.bubble a.closeBubble {
+	color:black;
+	font-size:1em;
+	position:absolute;
+	right:18px;
+	text-decoration:underline;
+	top:1px;
+}
+.bubble ul li {
+	background:url(../images/bg/status-sprite.gif) no-repeat 0 3px;
+	color:black;
+	line-height:1.5;
+	padding-left:15px;
+}

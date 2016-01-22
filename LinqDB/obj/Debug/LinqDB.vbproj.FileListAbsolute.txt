@@ -1,0 +1,36 @@
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\LinqDB.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\LinqDB.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\LinqDB.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\Para.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\Para.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\bin\Debug\Para.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\ResolveAssemblyReference.cache
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\LinqDB.Resources.resources
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\LinqDB.vbproj.GenerateResource.Cache
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\LinqDB.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\LinqDB.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\LinqDB\obj\Debug\LinqDB.pdb
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\LinqDB.dll
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\LinqDB.pdb
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\LinqDB.xml
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\Para.dll
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\Para.pdb
+C:\scoresolutions\MTL-GWA\LinqDB\bin\Debug\Para.xml
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\ResolveAssemblyReference.cache
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\LinqDB.Resources.resources
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\LinqDB.vbproj.GenerateResource.Cache
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\LinqDB.dll
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\LinqDB.xml
+C:\scoresolutions\MTL-GWA\LinqDB\obj\Debug\LinqDB.pdb
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\LinqDB.dll
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\LinqDB.pdb
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\LinqDB.xml
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\Para.dll
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\Para.pdb
+D:\MyProject\MTL-GWA\LinqDB\bin\Debug\Para.xml
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\LinqDB.Resources.resources
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\LinqDB.vbproj.GenerateResource.Cache
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\LinqDB.dll
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\LinqDB.xml
+D:\MyProject\MTL-GWA\LinqDB\obj\Debug\LinqDB.pdb

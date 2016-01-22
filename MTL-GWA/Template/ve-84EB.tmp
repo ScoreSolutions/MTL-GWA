@@ -1,0 +1,204 @@
+﻿<%@ Master Language="VB" CodeFile="ContentMasterPage.master.vb" Inherits="Template_ContentMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Muang Thai's Group Insurance Web Access</title>
+    <script type="text/javascript" language="JavaScript" src="../Template/JScript.js" charset="Windows-874" > </script>
+    <script type="text/javascript" language="JavaScript" src="../Template/jquery.min.js" > </script>
+    <script type="text/javascript" src="../Template/datetimepicker_css.js" ></script>
+    
+     <!--<link id="MyStyleSheet" href="../Template/StyleSheet.css" rel="stylesheet" type="text/css" charset="UTF-8"/>-->
+    
+    <link type="text/css" rel="stylesheet" href="../Template/DDLMenuCSS.css" charset="UTF-8"  /> 
+        <!-- style Tong-->
+     <link href="../css/font.css" media="screen" rel="stylesheet" type="text/css" />
+     <link href="../css/frm.css" media="screen" rel="stylesheet" type="text/css" />
+     <!--<link href="../css/input.css" media="screen" rel="stylesheet" type="text/css" />-->
+      <link href="../css/screen.css" media="screen" rel="stylesheet" type="text/css" /> 
+  
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            history.go(1);
+        }
+    </script>
+
+    
+    <script type="text/JavaScript" language="JavaScript">
+        function pageLoad() {
+            var manager = Sys.WebForms.PageRequestManager.getInstance();
+            manager.add_endRequest(endRequest);
+            manager.add_beginRequest(OnBeginRequest);
+        }
+        function OnBeginRequest(sender, args) {
+            $get('pageContent').className = 'onProgress';
+        }
+        function endRequest(sender, args) {
+            $get('pageContent').className = '';
+        }
+
+        function SaveTransLog(TransDesc) {
+            AjaxScript.SaveTransLog(TransDesc);
+        }
+        
+        function settime() {
+            var curtime = new Date();
+            var curhour = curtime.getHours();
+            var curmin = curtime.getMinutes();
+            var cursec = curtime.getSeconds();
+            var time = "";
+
+            time = curhour + ":" +
+            (curmin < 10 ? "0" : "") + curmin + ":" +
+            (cursec < 10 ? "0" : "") + cursec;
+
+            //if (curhour == 0) curhour = 12;
+            //time = (curhour > 12 ? curhour - 12 : curhour) + ":" +
+            //(curmin < 10 ? "0" : "") + curmin + ":" +
+            //(cursec < 10 ? "0" : "") + cursec + " " +
+            //(curhour > 12 ? "PM" : "AM");
+
+            document.getElementById('lblClock').innerHTML = time;
+        }
+        
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body >
+    <center>
+        <table width="1000px" border="0" cellpadding="0" cellspacing="0" id="pageContent" align="center">
+            <tr>
+                <td style="width: 1000px" align="center"  >
+                    <form id="form1" runat="server" enctype="multipart/form-data">
+                    <cc1:ToolkitScriptManager ID="ScriptManager1" runat="server">
+                        <Services>
+                            <asp:ServiceReference Path="~/Template/AjaxScript.asmx" />
+                        </Services>
+                    </cc1:ToolkitScriptManager>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <div id="idContent" align="center">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" >
+                                <tr>
+                                    <td align="center" width="100%">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" >
+                                            <tr>
+                                                <td class="Header" align="center" valign="bottom">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td >
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="middle"  >
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tr >
+                                                                        <td width="10px"><img src="../Images/MenuLeft.png" /></td>
+                                                                        <td style="background-color:#FFCCFF" >
+                                                                            <asp:Label ID="lblMenu" runat="server" Text="" ></asp:Label>
+                                                                        </td>
+                                                                        <td align="right" width="70px" style="background-color:#FFCCFF" >
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr style="height:5px;margin:0" >
+                                                                                    <td width="50%" align="center" valign="top">
+                                                                                        <asp:ImageButton ID="btnChangeLangEN" Width="20px" runat="server" ImageUrl="~/Images/USA.PNG" ToolTip="Menu English" />
+                                                                                    </td>
+                                                                                    <td width="50%" align="center" valign="top">
+                                                                                        <asp:ImageButton ID="btnChangeLangTH" Width="20px" runat="server" ImageUrl="~/Images/TH.PNG" ToolTip="àÁ¹ÙÀÒÉÒä·Â" />
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="height:5px;margin:0;">
+                                                                                    <td align="center">
+                                                                                        <asp:LinkButton ID="likEN" runat="server" Font-Size="XX-Small" Text="EN" ToolTip="Menu English" ></asp:LinkButton>
+                                                                                    </td>
+                                                                                    <td align="center">
+                                                                                        <asp:LinkButton ID="likTH" runat="server" Font-Size="XX-Small" Text="TH" ToolTip="àÁ¹ÙÀÒÉÒä·Â" ></asp:LinkButton>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="10px"><img src="../Images/MenuRight.png" /></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background:#FFFFFF"; >
+                                                    <table width="100%" height="430px" border="0" >                                   
+                                                        <tr style="height:35px" >
+                                                            <td width="80%" align="left" class="CssHead" >
+                                                                <font color="black">ขณะนี้คุณอยู่ที่หน้า : </font>
+                                                                <asp:Label ID="lblPageName" runat="server" ForeColor="#0066CC" ></asp:Label>
+                                                            </td>
+                                                            <td width="20%" align="right" style="line-height:35px;vertical-align:top;" >
+                                                                <asp:Label ID="lblUser" runat="server" Text="" Font-Bold="true" ForeColor="#0078bf" ></asp:Label>&nbsp;<span id="lblClock" style="display:none" ></span>
+                                                                <asp:Label ID="lblLastLogin" runat="server" ForeColor="Black" Text="" Visible="false" ></asp:Label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr valign="top">
+                                                            <td align="center" colspan="2" >
+                                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                                                                </asp:ContentPlaceHolder>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td  align="center" >
+                                                    <img src="../Images/MtlFooter.png" width="1000px" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+                        <ProgressTemplate>
+                            <div id="IMGDIV" align="center" valign="middle" runat="server" style="position: absolute;
+                                left: 0; top: 0; width: 100%; height: 100%; visibility: visible; vertical-align: middle;
+                                border-style: inset; border-color: black; filter: alpha(opacity=40); background-color: #333333;
+                                z-index: 20000">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/ajax_inprogress.gif" CssClass="" />
+                            </div>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>

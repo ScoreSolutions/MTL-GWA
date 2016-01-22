@@ -1,0 +1,54 @@
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Engine.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Engine.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Engine.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqDB.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqWS.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Para.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqDB.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqDB.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Para.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\Para.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqWS.pdb
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\bin\Debug\LinqWS.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\ResolveAssemblyReference.cache
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\Engine.Resources.resources
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\Engine.vbproj.GenerateResource.Cache
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\Engine.dll
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\Engine.xml
+D:\Kamonrat\พี่เต้ เมืองไทย MTL-GWA\MTL-GWA\Engine\obj\Debug\Engine.pdb
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Engine.dll
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Engine.pdb
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Engine.xml
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqDB.dll
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqWS.dll
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Para.dll
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqDB.pdb
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqDB.xml
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Para.pdb
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\Para.xml
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqWS.pdb
+C:\scoresolutions\MTL-GWA\Engine\bin\Debug\LinqWS.xml
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\ResolveAssemblyReference.cache
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\Engine.Resources.resources
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\Engine.vbproj.GenerateResource.Cache
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\Engine.dll
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\Engine.xml
+C:\scoresolutions\MTL-GWA\Engine\obj\Debug\Engine.pdb
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Engine.dll
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Engine.pdb
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Engine.xml
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqDB.dll
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqWS.dll
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Para.dll
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqDB.pdb
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqDB.xml
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Para.pdb
+D:\MyProject\MTL-GWA\Engine\bin\Debug\Para.xml
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqWS.pdb
+D:\MyProject\MTL-GWA\Engine\bin\Debug\LinqWS.xml
+D:\MyProject\MTL-GWA\Engine\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\MTL-GWA\Engine\obj\Debug\Engine.Resources.resources
+D:\MyProject\MTL-GWA\Engine\obj\Debug\Engine.vbproj.GenerateResource.Cache
+D:\MyProject\MTL-GWA\Engine\obj\Debug\Engine.dll
+D:\MyProject\MTL-GWA\Engine\obj\Debug\Engine.xml
+D:\MyProject\MTL-GWA\Engine\obj\Debug\Engine.pdb

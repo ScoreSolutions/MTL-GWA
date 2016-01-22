@@ -1,0 +1,6 @@
+table.dataTmp td {
+	padding:5px 3px;
+}
+table.dataTmp td table td {
+	padding:0 0 0 3px;
+}

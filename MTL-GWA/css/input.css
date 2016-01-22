@@ -1,0 +1,660 @@
+ .section
+{
+  	margin-left: 0px;
+  	margin-right:0px;
+	/*margin-top:10px;*/
+	
+}
+.border_popup
+{
+	
+	border:3px solid #1280D1;
+}
+ 
+.section_header
+{
+  
+	  /*background-color:#EFEFEF;*/
+	 font-weight:bold; 	
+	 
+	 text-align:left;
+	
+	
+	padding:0 10px; 	 
+    height:23px;
+	 color:#FFF;
+	/*background:url('../images/sshe_icon/tab.gif');*/
+	background-color:#0876C3;
+	 
+	
+}
+.screenName
+{
+	
+	float:right;color:#015B9A;margin-bottom:10px;
+	 
+ }
+
+.head_page_line
+{
+	float: left;
+	margin: -5p 5px 5px 5px;
+	width: 100%;
+	border-bottom: 1px #999 solid;
+	color: #1b1464;	
+}
+.section_header_2
+{
+  
+	 
+	 font-weight:bold; 	
+	 height:23px;
+	 text-align:right;	 
+	 padding-left:10px;
+ 	 padding-right:20px;
+ 	 /*background-color:#0876C3;*/
+ 	/*  color:#FFF;*/
+ 	/*color:#2987c8;*/
+	/* background-image:url('../images/sshe_icon/bgList2.gif'); */
+	 
+}
+.div_scroll
+ {
+	float:left;
+	overflow-x:auto;
+	width:980px;
+ 	
+}
+.div_scroll_1200
+ {
+	float:left;
+	overflow-x:auto;
+	width:1200px;
+ 	
+}
+.td_col1
+{
+	text-align:right;
+	padding-right:10px;
+	font-family: "TH Sarabun New"; font-size: 16pt;
+}
+.td_col2
+{
+	text-align:left;	 
+	font-family: "TH Sarabun New"; font-size: 16pt;
+	/*background-color:#f0f0f0;*/
+}
+.td_footer
+{
+	 margin-top:20px;
+}
+
+
+	.hidden_object
+	{
+		display:none;
+		}
+		
+		.button_red
+		{
+			height: 30px;
+	font-weight:bold;
+	font-family: "TH Sarabun New"; font-size: 16pt; color: #FFF; font-weight: bold; text-align: center;  
+	background-color:red;
+	border-collapse:separate;
+	border-bottom: solid 1px #FFF;
+	border-right: solid 1px #FFF;
+			
+			}
+.button					
+{
+	 
+	height: 30px;
+	font-weight:bold;
+	font-family: "TH Sarabun New"; font-size: 16pt; color: #FFF; font-weight: bold; text-align: center;  
+	
+	background-color:#2987c8;	 
+	border-collapse:separate;
+	border-bottom: solid 1px #FFF;
+	border-right: solid 1px #FFF;
+ 
+	 
+	 /*
+ 	font-family: "Tahoma"; font-size: 8pt; color: #FFF; font-weight: bold; text-align: center;  
+ 	background-color:#004ebc;
+	border-collapse:separate;
+	border-bottom: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;
+	cursor: hand;
+	height: 25px;
+*/
+ 
+ 
+}
+
+
+#tools
+{
+ width:100%;
+ margin-top:10px;
+ 
+}
+
+#tools .search
+{
+	 float:left;
+	height: 12px;
+}
+#tools .commmand
+{
+	float:right;
+	 
+}
+#tools .total
+{
+	 
+	float:left;	 
+	font-weight:bold;
+	color:#87B522;
+  
+}
+
+
+/*=========== List ==================*/
+ .header {
+	  
+	 
+	 background-color:#999;
+	 /*background-color:#ef1e08;*/
+	 font-weight:bold; 	
+	 height:25px;
+	 text-align:center;
+	 
+}
+
+.header a{
+	 
+	 color:#000;
+		 
+} 
+
+
+ .row_style
+ {
+	background-color:#F6F6F6;
+	 height:22px;
+}
+
+
+ .row_style td
+ {
+	 
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+ .row_style .content_
+ {
+	 
+	padding-left:10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+ 
+.row_style:hover {
+	 background-color:#9bf9ff;
+	 cursor:hand;
+}
+
+	 
+	 
+.row_alter_style
+ {  
+    /*background-color:#F6F6F6;*/
+    background-color:#FFF;
+    height:22px;
+	 
+ } 
+ 
+  .row_alter_style .content_
+ {
+	 
+	padding-left:10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.row_alter_style:hover {
+	 background-color:#9bf9ff;
+	 cursor:hand;
+}
+
+ 
+  .row_alter_style td
+ {
+ 	 
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+}
+	
+	.row_style_bold
+	{
+		background-color:#F6FBFF;
+	  	height:25px;
+		font-weight:bold;
+		/*color:#296DC1;*/
+		
+		}	 
+		
+		
+/*========== page not found ===========*/
+
+.text-info
+{
+	color:Red;	
+ 
+}
+.text-history
+{
+  
+ /* margin-left:10%;
+  margin-top:20px;	
+ */ 
+ margin-top:12px;
+ margin-bottom:12px;
+ background-color:#f6fbff;  
+  font-family:tahoma;
+  font-size:7pt;
+  border: solid 1px #EFEFEF;
+}
+.textbox_red
+{
+	background-color:Red;
+	font-weight:bold;
+	color:White;	
+}
+.text-red
+{
+	color:Red;
+	font-weight:bold;	
+}
+ .page
+{
+	background-color:#FFF;
+	/*margin-left:1px;
+	margin-right:1px;
+	*/
+}
+
+.notFund
+{
+	height:100px;	 
+	text-align:center;
+	color:Red;
+	font-weight:bold;
+	width:100%;
+	background-color:#efefef;
+ }
+ 
+ .header_popup
+ {
+ 
+ /*
+	height:25px;	 
+	font-weight:bold;	
+	color:#1b1464;
+	 
+ */
+	font-weight:bold; 	
+	text-align:left;
+	color:#00204e;
+	padding-left:10px; 	 
+    height:25px;	 
+	background:url('../images/sshe_icon/tab.gif');
+	 
+ 
+ }
+ 
+ .header_section
+ {
+  
+	 
+	font-family: "TH Sarabun New"; font-size: 16pt; 
+	font-weight:bold; 
+	color:Red;
+	height:30px;
+	text-align:right;
+	margin-right:30px;
+ }
+  .footer_popup
+ {
+	/* background-color:#EFEFEF; */
+ 
+	height:35px;
+	text-align:center;
+	padding-top:10px;
+ }
+ 
+ .section_popup
+ {
+	/* padding-left:10px;
+	padding-right:10px;	 */
+ }
+ 
+ /*======== input ======== */
+.input_disabled {
+	font-family: "TH Sarabun New"; font-size: 16pt;
+	background-color:#efefef;
+ 
+}
+
+input {
+  font-family: "TH Sarabun New"; font-size: 16pt;
+  line-height:150%;
+ 
+ 
+}
+.textbox
+{
+  font-family: "TH Sarabun New"; font-size: 16pt;
+ line-height:150%;
+ height:25px;
+}
+select {
+	 font-family: "TH Sarabun New"; font-size: 16pt;
+	 
+    height:25px;
+	 
+	 
+}
+
+input[type=text],
+input[type=password]
+{
+font-family: "TH Sarabun New"; font-size: 16pt;
+  
+  height:25px;	
+}
+ 
+textarea {
+	font-family: "TH Sarabun New"; font-size: 16pt;
+	  
+ 	 
+}
+
+.TableList
+ 	{
+ 		  background-color:#D4D0C8;  
+ 		/*background-color:#FFF;*/
+ 		font-family: "TH Sarabun New"; font-size: 16pt;
+ 		 border-bottom:solid 1px #EFEFEF;
+ 		 line-height:150%;
+ 	}
+ 	
+	.TableList td.red {
+		background:rgb(238, 30, 8);
+	}
+	.TableList td.gold {
+		background:rgb(255, 204, 0);
+	}
+	.TableList td.green {
+			background:rgb(11, 158, 25);
+	}
+
+   
+   .table_input
+   {
+   	/*border:solid 1px #EFEFEF;*/
+   	padding-bottom: 20px; padding-top: 2px;
+	/*background-color:#F6FBFF; */
+   	
+   	}
+ 	
+ 	
+ 	.table_search_none_bg
+ 	{
+ 		 
+ 		 font-family: "TH Sarabun New"; font-size: 16pt;  	   
+ 		 border:solid 1px #EFEFEF; 
+ 		 
+ 		
+	}
+	
+ 
+ 	.table_search
+ 	{
+ 		 
+ 		 font-family: "TH Sarabun New"; font-size: 16pt;
+	 
+}
+	
+	.table_search .td_1
+	{
+		text-align:right;
+		padding-right:10px;
+		width:20%;
+		/*background-color:#e2f0fe;*/
+	 
+	}
+	.table_search .td_2
+	{
+		text-align:left;
+		padding-right:10px;
+		width:30%;
+		
+	 
+	}
+	.table_search .td_3
+	{
+		text-align:right;
+		padding-right:10px;
+		width:20%;
+		/*background-color:#e2f0fe;*/
+		
+	 
+	}
+	.table_search .td_4
+	{
+		text-align:left;
+		padding-right:10px;
+		width:30%;
+		
+	 
+	}
+		
+	
+	.table_search .td_first
+	{
+		text-align:right;
+		padding-right:10px;
+}
+	
+	.lblNotFound
+	{
+	 height:200px;
+	
+	 
+	}
+	.hi-light
+	{
+		color:Red;	
+	}
+	
+	.Active
+	{
+		color:Green;	
+	}
+	
+	div .greenborder
+	{
+		border:3px solid rgb(7, 104, 16);	
+	}
+	
+	div .redborder
+	{
+		border:2px solid red;	
+	}
+	.row_sub_gray
+	{
+		 
+		background-color:#999;
+		color:white;
+		height:25px;
+		font-weight:bold;
+	 	
+	}
+	
+	.row_sub_table
+	{
+		 
+		background-color:#2987c8;
+		color:white;
+		height:25px;
+		font-weight:bold;
+	 	
+	}
+	
+	.text-red
+	{
+ 
+		font-size:8pt !important;
+	 
+	}
+	
+ .text-red-remark
+	{
+ 
+		font-size:6pt !important;
+		color:Red;
+	 
+	}
+	.text-blue
+	{
+ 
+		font-size:8pt !important;
+		 
+		 font-weight:bold;
+	}
+	
+	
+.txtActualPlan
+{
+	width:35px;	
+	 
+}
+.txtActualPlan_plan
+{
+	width:35px;
+	background-color:#bcffe3;		
+ }
+.txtActualPlan_disable
+{
+	width:35px;	
+	background-color:#f8ffd3;
+	 
+}
+.txtActualPlanRate_disable
+{
+	width:35px;	
+	background-color:#bcffe3;
+	font-weight:bold;
+	color:Red;
+ 
+	
+	
+}
+.txtActualActualRate_disable
+{
+	width:35px;	
+	}
+
+.text-topic
+{
+	color:#ff000c;	
+}
+
+.title_page_current
+{
+	color:#2987c8 !important;
+	text-align:right;
+	font-family:tahoma;
+	font-size:8pt !important;
+	font-weight:normal !important;
+	 
+}
+
+
+/* ui1 */
+table.ui1 
+{
+
+color: #0977C4;
+font-size: 12px;
+
+	
+	/*	border-collapse:collapse;
+               border-bottom:2px solid #ee1e08; 
+                font-family:tahoma;
+                background-color:#FFF;
+*/
+                
+           
+}
+table.ui1 th:first-child {
+/*	background:url(../images/bg/bg-ui1-red.jpg) repeat-y; */
+background:url(../images/bg/arrow-sidebar.gif) no-repeat;
+	color:#2987c8;
+	padding:0 5px 0 30px;
+	text-align:left;
+	font-weight: bold;
+
+}
+
+/*
+table.ui1 th, table.ui1 td {
+            
+}
+table.ui1 th {
+	color:#333;
+	font:bold 12px tahoma;
+	height:20px;
+	padding:0 5px;
+}
+
+table.ui1 td {
+                color:#333;
+                padding:10px 5px;
+}
+
+table.ui1 td table td {
+                border:0;
+                padding:5px 5px 0 5px;
+}*/
+
+.header_history
+{	font-weight:bold; 		 
+	 text-align:left;	
+	color:#00204e;
+	padding-left:10px; 	 
+    height:25px;	 
+	/*background:url('../images/sshe_icon/tab.gif');*/
+	
+}
+
+
+
+ 
+ .head_big
+ {
+	font-size:10pt;	
+	color:Blue;
+ }
+ 
+  .head_big_report
+ {
+	font-size:11pt;	
+	color:Blue;
+	font-weight:bold;
+ }
+ 

@@ -1,0 +1,35 @@
+﻿If using INFORMIX 3.30 ODBC Driver
+
+oConn.Open "Dsn='';" & _
+           "Driver={INFORMIX 3.30 32 BIT};" & _
+           "Host=myHostname;" & _
+           "Server=myServerName;" & _
+           "Service=myServiceName;" & _
+           "Protocol=olsoctcp;" & _
+           "Database=myDbName;" & _
+           "UID=myUsername;" & _
+           "PWD=myPassword" & _
+
+' Or
+oConn.Open "Dsn=myDsn;" & _
+           "Host=myHostname;" & _
+           "Server=myServerName;" & _
+           "Service=myServiceName;" & _
+           "Protocol=onsoctcp;" & _
+           "Database=myDbName;" & _
+           "Uid=myUsername;" & _
+           "Pwd=myPassword"
+If using INFORMIX-CLI 2.5 ODBC Driver
+
+oConn.Open "Driver={Informix-CLI 2.5 (32 Bit)};" & _
+           "Server=myServerName;" & _
+           "Database=myDbName;" & _
+           "Uid=myUsername;" & _
+           "Pwd=myPassword" & _
+           
+           
+URL : http://www.codemaker.co.uk/it/tips/ado_conn.htm#ODBCDriverForInformix
+
+
+Online Document :
+http://publib.boulder.ibm.com/infocenter/idshelp/v117/index.jsp?topic=%2Fcom.ibm.odbc.doc%2Fids_odbc_062.htm

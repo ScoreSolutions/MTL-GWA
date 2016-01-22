@@ -1,0 +1,99 @@
+.grayL1Open {
+	background:url(../images/bg/gray-l1-open.jpg) no-repeat 0 1px;
+	float:left;
+	height:13px;
+	margin-top:3px;
+	padding-left:0;
+	width:28px;
+}
+.redL1Open {
+	background:url(../images/bg/red-l1-open.jpg) no-repeat 0 1px;
+	float:left;
+	height:13px;
+	margin-top:3px;
+	padding-left:0;
+	width:28px;
+}
+.goldL1Open {
+	background:url(../images/bg/gold-l1-open.jpg) no-repeat 0 1px;
+	float:left;
+	height:13px;
+	margin-top:3px;
+	padding-left:0;
+	width:28px;
+}
+.greenL1Open {
+	background:url(../images/bg/green-l1-open.jpg) no-repeat 0 1px;
+	float:left;
+	height:13px;
+	margin-top:3px;
+	padding-left:0;
+	width:28px;
+}
+
+.grayL2Close {
+	background:url(../images/bg/gray-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.redL2Close {
+	background:url(../images/bg/red-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.goldL2Close {
+	background:url(../images/bg/gold-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.greenL2Close {
+	background:url(../images/bg/green-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+
+/* e */
+.e-grayL2Close {
+	background:url(../images/bg/e-gray-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.e-redL2Close {
+	background:url(../images/bg/e-red-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.e-goldL2Close {
+	background:url(../images/bg/e-gold-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
+.e-greenL2Close {
+	background:url(../images/bg/e-green-l2-close.jpg) no-repeat 0 1px;
+	float:left;
+	height:11px;
+	margin-top:3px;
+	padding-left:0;
+	width:32px;
+}
